@@ -1,17 +1,42 @@
-
-h1 {
-    text-align: center;
-    color: aliceblue;
-    font-family: 'Inter Tight', sans-serif;
-    font-size: 36px;
-    font-weight: bold;
+.kartinka {
+  max-width: 100%;
+  width: 480px;
+  height: 320px;
+  margin: 10px auto 0;
+  display: flex;
+  padding: 40px;
 }
 
 h4 {
-    display: flex;
-    font-family: 'Inter', sans-serif;
-font-size: 20px;
+  display: flex;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  font-size: 50px;
 }
+
+.block-grey1 {
+  background-color: rgb(255, 255, 255);
+  width: 660px;
+  height: 760px;
+}
+
+.p1 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 56px;
+    font-weight: bold;
+}
+
 
 
 
@@ -112,12 +137,12 @@ body {
 
 p {
 
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     text-align: center;
     font-family: 'Inter', sans-serif;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 h2 {
@@ -129,12 +154,7 @@ h2 {
 
 }
 
-.block-grey {
-   background-color: rgb(255, 255, 255);
-    width: 660px;
-    height: 370px;
 
-}
 
 .block {
     background-color: rgb(20, 51, 228);
@@ -321,16 +341,7 @@ footer {
  
 } 
 
-@media only screen and (max-width: 480px) {
-    p {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 10px;
 
-    }
-
- }
 
  @media only screen and (max-width: 480px) {
     footer {
@@ -352,9 +363,11 @@ footer {
 
 
  @media only screen and (max-width: 480px) {
-    .block-grey {
+    .block-grey1 {
+        display: flex;
+        flex-direction: column;
     width: 480px;
-    height: 100%;
+  
     
     }
     }
@@ -375,4 +388,38 @@ footer {
         h2 {
             font-size: 20px;
         }
+    }
+    @media only screen and (max-width:480px){ 
+    .kartinka {
+        margin-left: 5px;
+        max-width: 60%;
+        width: 380px;
+        height: 220px;
+        /* margin: 10px auto 0; */
+        display: flex;
+        padding-left: 100px;
+      }
+    }
+
+    @media only screen and (max-width:480px){ 
+        p {
+          
+           
+            font-size: 15px;
+            width: 90%;
+            padding-left: 20px;
+
+    
+        }
+    }
+
+    @media only screen and (max-width:480px){ 
+        h4 {
+       display: flex;
+            width: 100%;
+           justify-items: center;
+           align-items: center;
+           flex-direction: column;
+           padding-left: 60px;
+       }
     }
